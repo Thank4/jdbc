@@ -6,8 +6,8 @@ import com.mysql.cj.jdbc.Driver;
 import java.sql.*;
 
 public class StatementQuery {
-    public static void main(String[] args) throws SQLException {
-        DriverManager.registerDriver(new Driver());
+    public static void main(String[] args) throws SQLException, ClassNotFoundException {
+        Class.forName("com.mysql.cj.jdbc.Driver");
         Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/jdbc", "root", "root");
         Statement statement = connection.createStatement();
         String sql = "select * from user";
