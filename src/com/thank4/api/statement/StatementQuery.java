@@ -1,10 +1,9 @@
 package com.thank4.api.statement;
 
 
-import com.mysql.cj.jdbc.Driver;
+import org.junit.Test;
 
 import java.sql.*;
-import java.util.Properties;
 
 public class StatementQuery {
     public static void main(String[] args) throws SQLException, ClassNotFoundException {
@@ -23,6 +22,12 @@ public class StatementQuery {
         statement.close();
         connection.close();
 
+    }
 
+
+
+    @Test
+    public void test(){
+        System.out.println("test");
     }
 }
