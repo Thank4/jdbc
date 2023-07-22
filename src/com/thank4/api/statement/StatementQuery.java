@@ -26,7 +26,6 @@ public class StatementQuery {
 
 
 
-    @Test
     public void test(){
         System.out.println("test");
     }
